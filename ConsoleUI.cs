@@ -1,12 +1,15 @@
 ﻿using System;
 
+//This class is responsible for displaying the logo
 public static class ConsoleUI
 {
     public static void DisplayLogo()
     {
-        Console.ForegroundColor = ConsoleColor.White;
+        //Changes text colour
+        Console.ForegroundColor = ConsoleColor.Magenta;
 
 
+        //ASCII Art Logo
             Console.WriteLine(@"
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
@@ -24,7 +27,7 @@ public static class ConsoleUI
 ╚══════════════════════════════════════════════════════════════════════╝
 ");
 
-
+        //Reset colour back to defult
             Console.ResetColor();
     }
 }
