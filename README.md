@@ -52,4 +52,8 @@ This project was developed with a minimum of five meaningful commits:
 4. Added an audio file with the neccessary extentions installed
 5. Enhanced cybersecurity response system
 
+##CI Workflow successful build
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/e6ef0c0c-fca3-4034-8d36-32e676e13d89" />
+
+
 
