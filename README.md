@@ -29,8 +29,6 @@ C#
    - `what can I ask` - see available topics
 4. Type `exit` to quit the chatbot
 
-
-
 ## Example Interaction:
 Bot: Hello! Please enter your name
 You: Ruth
@@ -119,7 +117,7 @@ Contains the chatbot logic and functionality.
 Contains multimedia resources.
 * greeting.wav
 * logo.png
-* 
+  
 ## Commit History
 1.Created WPF project structure and GUI layout.
 2.Added chatbot interface and migrated Part 1 functionality.
