@@ -1,6 +1,9 @@
-﻿
-//This class stores user inormation
-class User
+﻿namespace CyberBotGUI.Models
 {
-    public string Name { get; set; }//Stores the user's name
+    public class User
+    {
+        public string Name { get; set; } = "";
+
+        public string FavouriteTopic { get; set; } = "";
+    }
 }

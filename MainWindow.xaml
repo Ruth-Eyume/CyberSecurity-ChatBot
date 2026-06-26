@@ -1,0 +1,170 @@
+﻿<Window x:Class="CyberBotGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CyberShield"
+        Height="780"
+        Width="1100"
+        WindowStartupLocation="CenterScreen"
+        Background="#1F0F18">
+
+    <Grid Margin="15">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER -->
+
+        <Border Grid.Row="0"
+                Background="#2A141F"
+                CornerRadius="20"
+                Padding="15"
+                Margin="0,0,0,15">
+
+            <StackPanel HorizontalAlignment="Center">
+
+                <TextBlock
+                    Text="CYBERSHIELD"
+                    Foreground="#FF4FA3"
+                    FontWeight="Bold"
+                    FontSize="34"
+                    HorizontalAlignment="Center"/>
+
+
+                <TextBlock
+                    Text="Cybersecurity Awareness Chatbot"
+                    Foreground="White"
+                    FontSize="16"
+                    Margin="0,5"/>
+
+                <Image Source="/Image/logo.png"
+                       Width="260"
+                       Height="90"
+                       Stretch="Uniform"/>
+
+            </StackPanel>
+
+        </Border>
+
+        <!-- CHAT -->
+
+        <Border Grid.Row="1"
+                Background="#2A141F"
+                CornerRadius="15"
+                Padding="10">
+
+            <RichTextBox
+                x:Name="txtChat"
+                Background="#2A141F"
+                Foreground="White"
+                BorderThickness="0"
+                FontSize="16"
+                IsReadOnly="True"
+                VerticalScrollBarVisibility="Auto"/>
+        </Border>
+
+        <!-- INPUT -->
+
+        <Grid Grid.Row="2"
+              Margin="0,15">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="150"/>
+
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                x:Name="txtUserInput"
+                Height="45"
+                Background="#351A28"
+                Foreground="White"
+                BorderBrush="#FF4FA3"
+                BorderThickness="2"
+                FontSize="16"
+                Padding="10"
+                VerticalContentAlignment="Center"
+                KeyDown="txtUserInput_KeyDown"/>
+
+            <Button
+                Grid.Column="1"
+                x:Name="btnSend"
+                Content="SEND"
+                Margin="10,0,0,0"
+                Height="45"
+                FontSize="16"
+                FontWeight="Bold"
+                Background="#FF4FA3"
+                Foreground="White"
+                BorderThickness="0"
+                Click="BtnSend_Click"/>
+
+        </Grid>
+
+        <!-- FEATURE BUTTONS -->
+
+        <UniformGrid
+            Grid.Row="3"
+            Columns="5"
+            Margin="0,10">
+
+            <Button
+                x:Name="btnAddTask"
+                Content="➕ Add Task"
+                Height="45"
+                Margin="5"
+                Background="#FF4FA3"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="BtnAddTask_Click"/>
+
+            <Button
+                x:Name="btnViewTasks"
+                Content="📋 View Tasks"
+                Height="45"
+                Margin="5"
+                Background="#FF4FA3"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="BtnViewTasks_Click"/>
+
+            <Button
+                x:Name="btnQuiz"
+                Content="🎮 Start Quiz"
+                Height="45"
+                Margin="5"
+                Background="#FF4FA3"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="BtnQuiz_Click"/>
+
+            <Button
+                x:Name="btnActivity"
+                Content="📜 Activity Log"
+                Height="45"
+                Margin="5"
+                Background="#FF4FA3"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="BtnActivity_Click"/>
+
+            <Button
+                x:Name="btnClear"
+                Content="🗑 Clear Chat"
+                Height="45"
+                Margin="5"
+                Background="#FF4FA3"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="BtnClear_Click"/>
+
+        </UniformGrid>
+
+    </Grid>
+
+</Window>
