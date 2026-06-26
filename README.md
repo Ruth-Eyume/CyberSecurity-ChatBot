@@ -59,16 +59,16 @@ This project was developed with a minimum of five meaningful commits:
 ## CyberShield Cybersecurity Awareness Chatbot
 The system is built using C#, XAML (WPF), and SQL Server Management Studio.
 
-## 🚀 Features
-💬 Chatbot System
+##  Features
+ Chatbot System
 Responds to cybersecurity questions
 Uses keyword detection (phishing, malware, passwords, etc.)
 Includes sentiment detection (worried, confused, scared, etc.)
-## 🧠 NLP Simulation
+##  NLP Simulation
 Recognises different user phrasings
 Uses string matching for intent detection
 Supports flexible user input interpretation
-## 📋 Task Management System
+## Task Management System
 Add cybersecurity tasks
 Store tasks in SQL Server database
 View all tasks
@@ -77,16 +77,16 @@ Delete tasks
 
 Database used: SQL Server (SSMS)
 
-## 🎮 Cybersecurity Quiz
+## Cybersecurity Quiz
 Multiple-choice questions
 Immediate feedback after each answer
 Score tracking system
 Final performance message
-## 📜 Activity Log
+## Activity Log
 Records all system actions
 Tracks user interactions
 Displays log history in a separate window
-🛠️ Technologies Used
+ Technologies Used
 C# (.NET WPF)
 XAML (UI Design)
 SQL Server Management Studio (Database)
@@ -121,7 +121,7 @@ Standardized chatbot icons and message formatting
 Completed full Part 3 requirements with GUI-based system
 Final testing and bug fixes before submission
 
-## 🗄️ Database Setup
+##  Database Setup
 Run the following SQL script in SSMS:
 CREATE DATABASE CyberShieldDB;
 USE CyberShieldDB;
@@ -133,7 +133,7 @@ CREATE TABLE Tasks
     ReminderDate DATE,
     IsCompleted BIT DEFAULT 0
 );
-▶️ How to Run
+ How to Run
 Open solution in Visual Studio
 Ensure SQL Server is running
 Update connection string if needed
