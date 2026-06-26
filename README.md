@@ -93,37 +93,38 @@ SQL Server Management Studio (Database)
 Microsoft.Data.SqlClient
 Object-Oriented Programming (OOP)
 ## Project Structure
-CyberBotGUI
-│
-├── Models
-│   ├── User.cs
-│   ├── TaskModel.cs
-│   ├── QuizQuestion.cs
-│   └── Sentiments.cs
-│
-├── Services
-│   ├── ChatbotService.cs
-│   ├── DatabaseService.cs
-│   ├── QuizService.cs
-│   ├── ActivityLogger.cs
-│   └── VoiceGreeting.cs
-│
-├── Windows
-│   ├── MainWindow.xaml
-│   ├── TaskWindow.xaml
-│   └── ActivityLogWindow.xaml
-│
-└── Database (SQL Server)
-    └── CyberShieldDB
-        └── Tasks Table
+## CyberBotGUI
+## Models
+  User.cs
+  TaskModel.cs
+  QuizQuestion.cs
+  Sentiments.cs
+## Services
+  ChatbotService.cs
+  DatabaseService.cs
+  QuizService.cs
+  ActivityLogger.cs
+  VoiceGreeting.cs
+
+## Windows
+  MainWindow.xaml
+  TaskWindow.xaml
+  ActivityLogWindow.xaml
+
+## Database (SQL Server)
+    CyberShieldDB
+         Tasks Table
+## Commit history
+Created Activity Log window for GUI-based log viewing
+Integrated real-time log updates across system features
+Standardized chatbot icons and message formatting
+Completed full Part 3 requirements with GUI-based system
+Final testing and bug fixes before submission
+
 ## 🗄️ Database Setup
-
 Run the following SQL script in SSMS:
-
 CREATE DATABASE CyberShieldDB;
-
 USE CyberShieldDB;
-
 CREATE TABLE Tasks
 (
     Id INT IDENTITY(1,1) PRIMARY KEY,
